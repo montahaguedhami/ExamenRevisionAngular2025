@@ -1,0 +1,41 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+  <div *ngIf="messageErreur" style="color:red; margin-bottom: 10px;">
+    {{ messageErreur }}
+  </div>
+
+  <label>Date</label>
+  <input type="date" [(ngModel)]="match.date" name="date" required #date="ngModel">
+  <div *ngIf="date.invalid && date.touched" style="color:red"></div>
+  
+  <label>Heure</label>
+  <input type="time" [(ngModel)]="match.heure" name="match.heure" required #heure="ngModel">
+  <div *ngIf="heure.invalid && heure.touched" style="color:red"></div>
+
+  <label>Lieu</label>
+  <input type="text" [(ngModel)]="match.lieu" name="lieu" required #lieu="ngModel">
+  <div *ngIf="lieu.invalid && lieu.touched" style="color:red"></div>
+  
+  <label>Equipe A</label>
+  <select [(ngModel)]="match.equipeA" name="equipeA" required #equipeA="ngModel">
+    <option [ngValue]="null">Sélectionner une équipe</option>
+    <option *ngFor="let e of equipes" [ngValue]="e">
+      {{ e.nom }}
+    </option>
+  </select>
+  <div *ngIf="equipes.length === 0" style="color:orange; font-size: 12px;">
+    Chargement des équipes... (Vérifiez que json-server est démarré)
+  </div>
+
+  <label>Equipe B</label>
+  <select [(ngModel)]="match.equipeB" name="equipeB" required #equipeB="ngModel">
+    <option [ngValue]="null">Sélectionner une équipe</option>
+    <option *ngFor="let e of equipes" [ngValue]="e">
+      {{ e.nom }}
+    </option>
+  </select>
+  <div *ngIf="equipeB.invalid && equipeB.touched" style="color:red"></div>
+
+  <button type="submit" [disabled]="f.invalid">
+    Soumettre
+  </button>
+</form>

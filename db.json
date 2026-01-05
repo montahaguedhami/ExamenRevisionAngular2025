@@ -1,0 +1,186 @@
+{
+  "equipes": [
+    {
+      "id": "1",
+      "name": "Equipe 1",
+      "natif": "Senior"
+    },
+    {
+      "id": "2",
+      "name": "Equipe 2",
+      "natif": "Junior"
+    },
+    {
+      "id": "3",
+      "name": "Equipe 3",
+      "natif": "Senior"
+    },
+    {
+      "id": "4",
+      "name": "Equipe 4",
+      "natif": "Junior"
+    }
+  ],
+  "matchs": [
+    {
+      "id": "1",
+      "date": "5455-07-07",
+      "heure": "17:55",
+      "lieu": "Mdvf",
+      "equipeA": {
+        "id": "1",
+        "nom": "Equipe 1",
+        "natif": "Senior"
+      },
+      "equipeB": {
+        "id": "2",
+        "nom": "Equipe 2",
+        "natif": "Junior"
+      },
+      "score": {
+        "equipeA": 6,
+        "equipeB": 1
+      }
+    },
+    {
+      "id": "2",
+      "date": "2055-11-12",
+      "heure": "02:20",
+      "lieu": "Manouba",
+      "equipeA": {
+        "id": "1",
+        "nom": "Equipe 1",
+        "natif": "Senior"
+      },
+      "equipeB": {
+        "id": "2",
+        "nom": "Equipe 2",
+        "natif": "Junior"
+      },
+      "score": {
+        "equipeA": 0,
+        "equipeB": 1
+      }
+    },
+    {
+      "id": "3",
+      "date": "2026-05-01",
+      "heure": "11:25",
+      "lieu": "Manouba",
+      "equipeA": {
+        "id": "4",
+        "nom": "Equipe 4",
+        "natif": "Junior"
+      },
+      "equipeB": {
+        "id": "1",
+        "nom": "Equipe 1",
+        "natif": "Senior"
+      },
+      "score": {
+        "equipeA": 7,
+        "equipeB": 3
+      }
+    },
+    {
+      "id": "4",
+      "date": "2026-01-15",
+      "heure": "00:27",
+      "lieu": "Manouba",
+      "equipeA": {
+        "id": "3",
+        "nom": "Equipe 3",
+        "natif": "Senior"
+      },
+      "equipeB": {
+        "id": "4",
+        "nom": "Equipe 4",
+        "natif": "Junior"
+      },
+      "score": {
+        "equipeA": 0,
+        "equipeB": 0
+      }
+    },
+    {
+      "id": "5",
+      "date": "2026-01-16",
+      "heure": "00:29",
+      "lieu": "Manouba",
+      "equipeA": {
+        "id": "3",
+        "nom": "Equipe 3",
+        "natif": "Senior"
+      },
+      "equipeB": {
+        "id": "1",
+        "nom": "Equipe 1",
+        "natif": "Senior"
+      },
+      "score": {
+        "equipeA": 0,
+        "equipeB": 0
+      }
+    },
+    {
+      "id": "6ac7",
+      "date": "2026-01-21",
+      "heure": "20:24",
+      "lieu": "Manouba",
+      "equipeA": {
+        "id": "3",
+        "nom": "Equipe 3",
+        "natif": "Senior"
+      },
+      "equipeB": {
+        "id": "2",
+        "nom": "Equipe 2",
+        "natif": "Junior"
+      },
+      "score": {
+        "equipeA": 0,
+        "equipeB": 0
+      }
+    },
+    {
+      "id": "2422",
+      "date": "2026-01-30",
+      "heure": "19:27",
+      "lieu": "Ssgogkugk",
+      "equipeA": {
+        "id": "2",
+        "nom": "Equipe 2",
+        "natif": "Junior"
+      },
+      "equipeB": {
+        "id": "1",
+        "nom": "Equipe 1",
+        "natif": "Senior"
+      },
+      "score": {
+        "equipeA": 1,
+        "equipeB": 1
+      }
+    },
+    {
+      "id": "e5ad",
+      "date": "2026-01-11",
+      "heure": "19:27",
+      "lieu": "Fouchena",
+      "equipeA": {
+        "id": "4",
+        "nom": "Equipe 4",
+        "natif": "Junior"
+      },
+      "equipeB": {
+        "id": "3",
+        "nom": "Equipe 3",
+        "natif": "Senior"
+      },
+      "score": {
+        "equipeA": 0,
+        "equipeB": 0
+      }
+    }
+  ]
+}

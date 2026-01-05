@@ -1,0 +1,16 @@
+<h2>Liste des matchs</h2>
+
+<div *ngIf="matchs.length === 0">
+  <p>Aucun match disponible.</p>
+  
+</div>
+
+<ul *ngIf="matchs.length > 0">
+  <li *ngFor="let m of matchs; let i = index">
+    Match {{ i + 1 }} :
+    {{ m.equipeA.nom }} ({{ m.score.equipeA }})
+    VS
+    {{ m.equipeB.nom }} ({{ m.score.equipeB }})
+    <a [routerLink]="['/listematchs/updatescore', m.id]">Modifier Score</a>
+  </li>
+</ul>

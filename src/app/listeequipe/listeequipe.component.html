@@ -1,0 +1,11 @@
+<h3>Liste des équipes</h3>
+
+<div *ngIf="equipes.length === 0">
+  <p>Aucune équipe disponible.</p>
+</div>
+
+<ul *ngIf="equipes.length > 0">
+  <li *ngFor="let e of equipes">
+    {{ e.nom }} - {{ e.natif }}
+  </li>
+</ul>

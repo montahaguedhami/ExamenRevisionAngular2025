@@ -1,0 +1,13 @@
+<div *ngIf="match; else notFound">
+  <label>Equipe A</label>
+  <input type="number" [(ngModel)]="match.score.equipeA">
+
+  <label>Equipe B</label>
+  <input type="number" [(ngModel)]="match.score.equipeB">
+
+  <button (click)="modifier()">Modifier</button>
+</div>
+
+<ng-template #notFound>
+  <p>Match introuvable.</p>
+</ng-template>
